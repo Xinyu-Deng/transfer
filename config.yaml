@@ -1,8 +1,8 @@
 signal:
     nclass: 1
     nlayer: 1
-    num_heads: 1
-    hidden_dim: 16
+    num_heads: 4
+    hidden_dim: 128
     epoch: 2000
     lr: 0.01
     weight_decay: 0.0
@@ -13,32 +13,32 @@ signal:
 cora:
     nclass: 7
     nlayer: 1
-    num_heads: 1
+    num_heads: 4
     hidden_dim: 128
     epoch: 2000
     lr: 0.001
-    weight_decay: 0.0
-    tran_dropout: 0.1
-    feat_dropout: 0.1
-    prop_dropout: 0.1
+    weight_decay: 0.0001
+    tran_dropout: 0.5
+    feat_dropout: 0.8
+    prop_dropout: 0.5
     norm: 'layer'
 citeseer:
     nclass: 6
     nlayer: 1
-    num_heads: 1
+    num_heads: 4
     hidden_dim: 128
     epoch: 2000
     lr: 0.001
-    weight_decay: 0.0
-    tran_dropout: 0.1
-    feat_dropout: 0.1
-    prop_dropout: 0.1
+    weight_decay: 0.0001
+    tran_dropout: 0.5
+    feat_dropout: 0.7
+    prop_dropout: 0.5
     norm: 'layer'
 # photo:
 #     nclass: 8
 #     nlayer: 2
 #     num_heads: 4
-#     hidden_dim: 32
+#     hidden_dim: 128
 #     epoch: 2000
 #     lr: 0.0002
 #     weight_decay: 0.0001
@@ -49,31 +49,31 @@ citeseer:
 arxiv:
     nclass: 40
     nlayer: 1
-    num_heads: 1
+    num_heads: 4
     hidden_dim: 128
     epoch: 2000
     lr: 0.001
     weight_decay: 0.0
     tran_dropout: 0.1
-    feat_dropout: 0.1
+    feat_dropout: 0.7
     prop_dropout: 0.1
     norm: 'layer'
 arxivyear:
     nclass: 5
     nlayer: 1
-    num_heads: 1
+    num_heads: 4
     hidden_dim: 128
     epoch: 2000
     lr: 0.001
     weight_decay: 0.0
-    tran_dropout: 0.1
-    feat_dropout: 0.1
-    prop_dropout: 0.1
+    tran_dropout: 0.5
+    feat_dropout: 0.8
+    prop_dropout: 0.5
     norm: 'layer'
 bookchild:
     nclass: 24
     nlayer: 1
-    num_heads: 1
+    num_heads: 4
     hidden_dim: 128
     epoch: 2000
     lr: 0.001
@@ -85,7 +85,7 @@ bookchild:
 bookhis:
     nclass: 12
     nlayer: 1
-    num_heads: 1
+    num_heads: 4
     hidden_dim: 128
     epoch: 2000
     lr: 0.001
@@ -97,7 +97,7 @@ bookhis:
 cornell:
     nclass: 5
     nlayer: 1
-    num_heads: 1
+    num_heads: 4
     hidden_dim: 128
     epoch: 2000
     lr: 0.001
@@ -109,7 +109,7 @@ cornell:
 texas:
     nclass: 5
     nlayer: 1
-    num_heads: 1
+    num_heads: 4
     hidden_dim: 128
     epoch: 2000
     lr: 0.001
@@ -121,7 +121,7 @@ texas:
 wisconsin:
     nclass: 5
     nlayer: 1
-    num_heads: 1
+    num_heads: 4
     hidden_dim: 128
     epoch: 2000
     lr: 0.001
@@ -133,7 +133,7 @@ wisconsin:
 washington:
     nclass: 5
     nlayer: 1
-    num_heads: 1
+    num_heads: 4
     hidden_dim: 128
     epoch: 2000
     lr: 0.001
@@ -145,7 +145,7 @@ washington:
 sportsfit:
     nclass: 13
     nlayer: 1
-    num_heads: 1
+    num_heads: 4
     hidden_dim: 128
     epoch: 2000
     lr: 0.001
@@ -157,7 +157,7 @@ sportsfit:
 wikics:
     nclass: 10
     nlayer: 1
-    num_heads: 1
+    num_heads: 4
     hidden_dim: 128
     epoch: 2000
     lr: 0.001
@@ -169,7 +169,7 @@ wikics:
 amazon_ratings:
     nclass: 5
     nlayer: 1
-    num_heads: 1
+    num_heads: 4
     hidden_dim: 128
     epoch: 2000
     lr: 0.001
@@ -181,7 +181,7 @@ amazon_ratings:
 pubmed:
     nclass: 3
     nlayer: 1
-    num_heads: 1
+    num_heads: 4
     hidden_dim: 128
     epoch: 2000
     lr: 0.001
@@ -193,7 +193,7 @@ pubmed:
 photo: # 重做
     nclass: 12
     nlayer: 1
-    num_heads: 1
+    num_heads: 4
     hidden_dim: 128
     epoch: 2000
     lr: 0.001
@@ -205,7 +205,7 @@ photo: # 重做
 computers:
     nclass: 10
     nlayer: 1
-    num_heads: 1
+    num_heads: 4
     hidden_dim: 128
     epoch: 2000
     lr: 0.001
@@ -216,33 +216,33 @@ computers:
     norm: 'layer'
 chameleon:
     nclass: 5
-    nlayer: 2
+    nlayer: 1
     num_heads: 4
-    hidden_dim: 32
+    hidden_dim: 128
     epoch: 2000
     lr: 0.001
     weight_decay: 0.0005
-    tran_dropout: 0.2
-    feat_dropout: 0.4
-    prop_dropout: 0.5
+    tran_dropout: 0.1
+    feat_dropout: 0.1
+    prop_dropout: 0.1
     norm: 'layer'
 squirrel:
     nclass: 5
-    nlayer: 2
-    num_heads: 2
-    hidden_dim: 32
+    nlayer: 1
+    num_heads: 4
+    hidden_dim: 128
     epoch: 2000
     lr: 0.001
-    weight_decay: 0.001
-    tran_dropout: 0.1
-    feat_dropout: 0.4
-    prop_dropout: 0.4
+    weight_decay: 0.0001
+    tran_dropout: 0.5
+    feat_dropout: 0.8
+    prop_dropout: 0.1
     norm: 'layer'
 actor:
     nclass: 5
-    nlayer: 2
-    num_heads: 1
-    hidden_dim: 32
+    nlayer: 1
+    num_heads: 4
+    hidden_dim: 128
     epoch: 2000
     lr: 0.0002
     weight_decay: 0.0001
@@ -253,12 +253,12 @@ actor:
 penn:
     nclass: 2
     nlayer: 1
-    num_heads: 1
-    hidden_dim: 64
+    num_heads: 4
+    hidden_dim: 128
     epoch: 2000
     lr: 0.001
     weight_decay: 0.001
     tran_dropout: 0.0
-    feat_dropout: 0.4
-    prop_dropout: 0.4
+    feat_dropout: 0.1
+    prop_dropout: 0.1
     norm: 'layer'

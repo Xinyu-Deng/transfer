@@ -153,5 +153,5 @@ class Specformer(nn.Module):
         else:
             h = self.feat_dp2(h)
             # h = self.classify(h)
-            return h,eig
+            return h,attn
 
